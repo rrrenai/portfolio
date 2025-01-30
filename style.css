@@ -4,6 +4,7 @@
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 body {
+    min-width: 800px;
     background-color: #04020c;
     display: flex;
 }
