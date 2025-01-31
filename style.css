@@ -6,6 +6,7 @@
 body {
     min-width: 800px;
     background-color: #04020c;
+    background-image: url("./media/background.PNG");
     display: flex;
 }
 #left-nav-bar {
@@ -43,6 +44,9 @@ body {
     box-shadow: 0 0 20px #424242;
     width: 55%;
     animation-play-state: paused;
+    -o-animation-play-state: paused;
+    -moz-animation-play-state: paused;
+    -webkit-animation-play-state: paused;
     cursor: pointer;
 }
 #nav-list {
@@ -67,12 +71,22 @@ li:hover {
 #content-container {
     /* width: 100%; */
     align-content: center;
-    /* background-color: red; */
     flex-grow: 3;
+    flex-direction: row;
 }
-#content {
+#content > div {
     /* max-width: fit-content; */
+    flex-grow: 2;
     border-radius: 8px;
     padding: 15px;
     background-color: white;
+}
+.spacer {
+    flex-grow: 1;
+}
+.hide {
+    display: none;
+}
+.show {
+    display: block;
 }

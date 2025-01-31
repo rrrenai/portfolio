@@ -11,22 +11,33 @@
         <img src="https://avatars.githubusercontent.com/u/165713237?v=4" class="avatar">
         <h1>Ren</h1>
         <ul id="nav-list">
-            <li id="about">About</li>
-            <li id="projects">Projects</li>
-            <li id="aspirations">Aspirations</li>
-            <li id="playlists">Playlists</li>
+            <li id="about-btn">About</li>
+            <li id="projects-btn">Projects</li>
+            <!-- <li id="aspirations-btn">Aspirations</li> -->
+            <!-- <li id="playlists-btn">Playlists</li> -->
         </ul>
     </div>
+    <div class="spacer"></div>
     <div id="content-container">
         <div id="content">
-            <div id="about-content">
+            <div id="default" class="show">
                 <h1>Hi, I'm Ren!</h1>
+                <p>Click the buttons on the left to navigate this website :)</p>
             </div>
-            <div id="projects-content">
+            <div id="about-content" class="hide">
+                <h1>About me</h1>
+                <p>I'm a teenager interested in building software to revolutionize music!</p>
+                <p>Check out my projects via the Projects page &lt;3</p>
+            </div>
+            <div id="projects-content" class="hide">
+                <h1>Github Repos</h1>
                 <ul id="repos"></ul>
             </div>
+            <!-- <div id="aspirations-content"></div> -->
+            <!-- <div id="playlist content"></div> -->
         </div>
     </div>
+    <div class="spacer"></div>
 </body>
 <script src="script.js"></script> 
 </html>
